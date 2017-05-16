@@ -1,0 +1,39 @@
+it-inspection-interior-item {
+  ion-title {
+    &.title {
+      padding: 10px 0;
+      display: block;
+    }
+    .toolbar-title {
+      padding: 0;
+      margin-left: 10px;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #222;
+    }
+  }
+  .grid {
+    padding: 0 0 5px 0;
+  }
+  .col {
+    padding: 0;
+  }
+  .inspection-item-row {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+}
+
+.button  {
+  background-color: #fff;
+  color: #488aff;
+  border: 1px solid #488aff;
+}
+
+.action-selected {
+  color: #fff;
+  background-color: #488aff;
+}

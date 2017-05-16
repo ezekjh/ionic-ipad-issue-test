@@ -1,0 +1,22 @@
+<ion-grid>
+    <ion-row>
+        <ion-col class="wrap-text">
+            <button ion-button large [ngClass]="{'action-selected': actionHandler==1}" (click)="actionButtonTapped(1)">
+                Action 1
+            </button>
+           
+            <button ion-button large [ngClass]="{'action-selected': actionHandler==2}" (click)="actionButtonTapped(2)">
+                Action 2
+            </button>
+            
+            <button ion-button large [ngClass]="{'action-selected': actionHandler==3}" (click)="actionButtonTapped(3)">
+               Action 3
+            </button>
+            
+            <button ion-button large [ngClass]="{'action-selected': actionHandler==4}" (click)="actionButtonTapped(4)">
+                Action 4
+            </button>
+            
+        </ion-col>
+    </ion-row>
+</ion-grid>
