@@ -10,9 +10,23 @@
 </ion-header>
 <ion-content class="inspection-item-list">
     <ion-list [virtualScroll]="items" [approxItemHeight]="'260px'">
-        <ion-item *virtualItem="let item">
-            <it-inspection-interior-item [item]="item">
-            </it-inspection-interior-item>
-        </ion-item>
+         <div *virtualItem="let item">
+            <h2>{{item.itemName}}</h2>
+            <button ion-button large [class.action-selected]="item.actionHandler==1" (click)="actionButtonTapped(item, 1)">
+                Action 1
+            </button>
+           
+            <button ion-button large [class.action-selected]="item.actionHandler==2" (click)="actionButtonTapped(item, 2)">
+                Action 2
+            </button>
+            
+            <button ion-button large [class.action-selected]="item.actionHandler==3" (click)="actionButtonTapped(item, 3)">
+               Action 3
+            </button>
+            
+            <button ion-button large [class.action-selected]="item.actionHandler==4" (click)="actionButtonTapped(item, 4)">
+                Action 4
+            </button>
+        </div>
     </ion-list>
 </ion-content>

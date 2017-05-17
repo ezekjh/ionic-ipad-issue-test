@@ -5,15 +5,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { ItemListComponent } from './item-list.component';
-import { InspectionInteriorItemComponent } from './inspection-interior-item.component';
-import { ActionValueComponent } from './action-value.component';
 
 @NgModule({
   declarations: [
     MyApp,
     ItemListComponent,
-    InspectionInteriorItemComponent,
-    ActionValueComponent
   ],
   imports: [
     BrowserModule,

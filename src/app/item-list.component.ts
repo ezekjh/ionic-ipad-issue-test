@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Input } from '@angular/core';
 import { Content, NavController } from 'ionic-angular';
 
 
@@ -17,6 +17,10 @@ export class ItemListComponent {
 
     public ionViewDidLoad() {
 
+    }
+
+     actionButtonTapped(item: any, index: number) {
+        item.actionHandler = index;
     }
    
 }
